@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang cuu chuong</title>
+</head>
+<body>
+<script>
+    let bang;
+    let i, j;
+    bang = "<table border='1' width='300'>"
+    for (i = 1; i < 10; i++) {
+        bang = bang + "<tr>";
+        for (j = 2; j < 10; j++) {
+            let result = j * i;
+            bang = bang + "<td>" + j + "*" + i + "=" + result + "</td>";
+        }
+        bang = bang + "</tr>"
+    }
+    bang = bang + "</table>"
+    document.write(bang);
+</script>
+</body>
+</html>
